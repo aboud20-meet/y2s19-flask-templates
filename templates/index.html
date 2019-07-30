@@ -1,1 +1,31 @@
-<!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}">
+<title></title>
+<h1> Fettucine Alfredo <h1/>
+
+</head>
+<body>
+<p> This Italian culinary dish brings back a wave of nostalgia from my childhood hometown Charleston, West Virginia. My family would always have Saturday evening dinners at two Italian restraunts called The Forum and Fazios. My parents always ordered for me the fettucine alfredo that came with either chicken, broccoli or shrimp. The past 14 years of my  dining experince has been shaped by this creamy Italian dish in the crackhead valleys of Applaicha.
+
+
+
+<p/>
+
+  {% for food in favorite_foods %}
+                {{food}} 
+                {% endfor %}
+<p2>
+	 {% if opposite_day == True %}
+                <p> maklouba coliflower, IASA food, idra: </p>
+            {% else %}
+                <p> fettucine alfredo, mansaf, maklouba eggplant, cheeseburgers </p>
+            {% endif %}
+
+
+
+<p2/>	
+</body>
+
+</html>
